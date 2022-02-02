@@ -1,0 +1,22 @@
+
+int r1=9,r2=8,r3=7;
+//r1=valve1,r2=valve2,r3=valve3
+void setup() {
+  // put your setup code here, to run once:
+pinMode(r1,OUTPUT);
+pinMode(r2,OUTPUT);
+pinMode(r3,OUTPUT);
+pinMode(13, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  digitalWrite(r1,LOW);
+digitalWrite(r2,LOW);
+digitalWrite(r3,HIGH);
+delay(1000);
+digitalWrite(r1,HIGH);
+digitalWrite(r2,HIGH);
+digitalWrite(r3,LOW);
+delay(1000);
+}

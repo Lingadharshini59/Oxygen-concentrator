@@ -19,5 +19,6 @@ delay(1000);
 digitalWrite(r1,HIGH);
 digitalWrite(r2,LOW);
 digitalWrite(r3,LOW);
+//r3 as always LOW (open) because we will use 5/2 solenoid valve, So the air flow will always present in the r3
 delay(1000);
 }

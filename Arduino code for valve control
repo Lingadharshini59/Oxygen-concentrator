@@ -11,12 +11,13 @@ pinMode(13, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(r1,LOW);
-digitalWrite(r2,LOW);
-digitalWrite(r3,HIGH);
-delay(1000);
-digitalWrite(r1,HIGH);
+digitalWrite(r1,LOW);
 digitalWrite(r2,HIGH);
+digitalWrite(r3,LOW);
+delay(1000);
+
+digitalWrite(r1,HIGH);
+digitalWrite(r2,LOW);
 digitalWrite(r3,LOW);
 delay(1000);
 }
